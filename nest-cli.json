@@ -10,6 +10,15 @@
   "monorepo": true,
   "root": "apps/virtual-facility",
   "projects": {
+    "mahfuz": {
+      "type": "application",
+      "root": "apps/mahfuz",
+      "entryFile": "main",
+      "sourceRoot": "apps/mahfuz/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/mahfuz/tsconfig.app.json"
+      }
+    },
     "virtual-facility": {
       "type": "application",
       "root": "apps/virtual-facility",
@@ -26,6 +35,24 @@
       "sourceRoot": "libs/workflows/src",
       "compilerOptions": {
         "tsConfigPath": "libs/workflows/tsconfig.lib.json"
+      }
+    },
+    "workflows-classifier": {
+      "type": "application",
+      "root": "apps/workflows-classifier",
+      "entryFile": "main",
+      "sourceRoot": "apps/workflows-classifier/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/workflows-classifier/tsconfig.app.json"
+      }
+    },
+    "workflows-notification": {
+      "type": "application",
+      "root": "apps/workflows-notification",
+      "entryFile": "main",
+      "sourceRoot": "apps/workflows-notification/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/workflows-notification/tsconfig.app.json"
       }
     },
     "workflows-service": {
