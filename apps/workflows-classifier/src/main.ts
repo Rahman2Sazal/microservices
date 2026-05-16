@@ -14,6 +14,6 @@ async function bootstrap() {
   });
 
   await app.startAllMicroservices();
-  await app.listen(3002); // Use 3002 so it doesn't conflict with other apps running on 3000, 3001, or 3003
+  await app.listen(3000); // Use 3002 so it doesn't conflict with other apps running on 3000, 3001, or 3003
 }
 bootstrap();
